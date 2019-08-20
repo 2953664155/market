@@ -50,7 +50,29 @@ export default new Router({
           path: '/index/addStock',
           name: 'addStock',
           component: () => import('./views/Modul/Stock/AddStock.vue')
+        }, {
+          path: '/index/clear',
+          name: 'clear',
+          component: () => import('./views/Modul/Clear/Clear.vue')
+        }, {
+          path: '/index/clearout',
+          name: 'clearout',
+          component: () => import('./views/Modul/Clear/Clearout.vue')
+        }, {
+          path: '/index/clearback',
+          name: 'clearback',
+          component: () => import('./views/Modul/Clear/Clearback.vue')
+        }, {
+          path: '/index/member',
+          name: 'member',
+          component: () => import('./views/Modul/Member/Member.vue')
+        }, {
+          path: '/index/addMember',
+          name: 'addMember',
+          component: () => import('./views/Modul/Member/AddMember.vue')
         },
+        
+        
       ]
     }
   ]

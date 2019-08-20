@@ -88,8 +88,8 @@ export default {
           cls: "el-icon-s-custom",
           title: "会员管理",
           children: [
-            { index: "/index/xxxx", name: "账号管理" },
-            { index: "/index/yyyyy", name: "添加账号" }
+            { index: "/index/member", name: "账号管理" },
+            { index: "/index/addMember", name: "添加账号" }
           ]
         }
       ]

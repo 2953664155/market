@@ -32,33 +32,33 @@
           </el-input>
           <span class="describe">默认市场价是销售价的1.2倍</span>
         </el-form-item>
-        <el-form-item label="商品进价" prop="price">
-          <el-input type="text" v-model="product.price" autocomplete="off">
+        <el-form-item label="商品进价" prop="stockPrice">
+          <el-input type="text" v-model="product.stockPrice" autocomplete="off">
               <template slot="append">元</template>
           </el-input>
         </el-form-item>
-        <el-form-item label="入库数量" prop="stockPrice">
-          <el-input type="text" v-model="product.stockPrice" autocomplete="off"></el-input>
+        <el-form-item label="入库数量" prop="stockCount">
+          <el-input type="text" v-model="product.stockCount" autocomplete="off"></el-input>
           <span class="describe">记重商品单位为千克</span>
         </el-form-item>
-        <el-form-item label="商品重量" prop="weight">
-          <el-input type="text" v-model="product.weight" autocomplete="off"></el-input>
+        <el-form-item label="商品重量" prop="commodityWeight">
+          <el-input type="text" v-model="product.commodityWeight" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item label="商品单价" prop="univalence">
           <el-input type="text" v-model="product.univalence" autocomplete="off">
               <template slot="append">元</template>
           </el-input>
         </el-form-item>
-        <el-form-item label="会员优惠" prop="vip">
-          <el-radio v-model="product.vip" label="1">享受</el-radio>
-          <el-radio v-model="product.vip" label="2">不享受</el-radio>
+        <el-form-item label="会员优惠" prop="vipDiscount">
+          <el-radio v-model="product.vipDiscount" label="1">享受</el-radio>
+          <el-radio v-model="product.vipDiscount" label="2">不享受</el-radio>
         </el-form-item>
-        <el-form-item label="是否促销" prop="state">
-          <el-radio v-model="product.state" label="1">启用</el-radio>
-          <el-radio v-model="product.state" label="2">禁用</el-radio>
+        <el-form-item label="是否促销" prop="promotion">
+          <el-radio v-model="product.promotion" label="1">启用</el-radio>
+          <el-radio v-model="product.promotion" label="2">禁用</el-radio>
         </el-form-item>
-        <el-form-item label="简介" prop="content">
-          <el-input type="textarea" v-model="product.content"></el-input>
+        <el-form-item label="简介" prop="goodsDesc">
+          <el-input type="textarea" v-model="product.goodsDesc"></el-input>
           <span class="describe">不超过200个汉字</span>
         </el-form-item>
         <el-form-item>
